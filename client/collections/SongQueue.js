@@ -2,13 +2,11 @@
 var SongQueue = Songs.extend({
 
   initialize: function() {
-  },
-  add: function(song) {
-    Songs.prototype.add.call(this, song);
-
-    if (this.length === 1) {
-      this.playFirst();
-    }
+    this.on('add', function(event) {
+      if (this.length === 1) {
+        this.playFirst();
+      }
+    });
   },
   dequeue: function() {
     return this.shift();
