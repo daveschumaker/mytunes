@@ -7,7 +7,10 @@ var SongModel = Backbone.Model.extend({
   },
 
   enqueue: function() {
-    this.get('songQueue').enqueue(this);
+    var songQueue = this.get('songQueue');
+    if (songQueue !== undefined) {
+      songQueue.enqueue(this);
+    }
   }
 
 });
