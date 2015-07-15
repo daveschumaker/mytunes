@@ -8,6 +8,9 @@ var SongQueue = Songs.extend({
   },
   dequeue: function() {
     return this.shift();
+  },
+  playFirst: function() {
+    this.first().play();
   }
 
 });
