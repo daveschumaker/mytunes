@@ -53,7 +53,6 @@ describe('PlayerView', function() {
     });
   });
 
-  /*
   // Work in Progress: Writing some tests!
 
   describe('Removing songs', function() {
@@ -68,9 +67,9 @@ describe('PlayerView', function() {
       songQueue.add(thirdSong);
 
       expect(songQueue.length).to.equal(3);
-
-      $(appView.songQueueView.el).children().eq(1).click();
+      $(appView.queueView.el).find('td').eq(1).click();
+      expect(songQueue.length).to.equal(2);
+      expect(songQueue.at(1)).to.equal(thirdSong);
     });
   });
-  */
 });
