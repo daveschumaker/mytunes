@@ -12,6 +12,8 @@ var SongQueue = Songs.extend({
       this.dequeue();
       if (this.length > 0) {
         this.playFirst();
+      } else {
+        this.trigger('finished');
       }
     });
 

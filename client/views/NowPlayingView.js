@@ -14,7 +14,7 @@ var NowPlayingView = Backbone.View.extend({
 
   render: function() {
     if (this.model.has('title') && this.model.has('artist')) {
-      return this.$el.html(this.template(this.model.attributes));
+      return this.$el.html(this.template(this.model.attributes)).addClass('now-playing');
     } else {
       return this.$el.html('');
     }

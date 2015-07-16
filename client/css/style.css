@@ -2,7 +2,7 @@ body {
   width: 100%;
 }
 
-header, audio {
+header, audio, .now-playing {
   padding-bottom: 20px;
 }
 

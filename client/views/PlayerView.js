@@ -18,6 +18,7 @@ var PlayerView = Backbone.View.extend({
   },
 
   render: function(){
+    this.el.volume = 0.2;
     return this.$el.attr('src', this.model ? this.model.get('url') : '');
   }
 
