@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+}
+
+header, audio {
+  padding-bottom: 20px;
+}
+
+header, .music-player {
+  margin: 0 auto;
+  width: 600px;
+}

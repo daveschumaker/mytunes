@@ -19,5 +19,15 @@ var songData = [
     url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/06+If+Your+Girl+Only+Knew.mp3",
     title: "If Your Girl Only Knew",
     artist: "Aaliyah",
-  }
+  },
+  {
+    url: "http://dave.ly/stuff/music/d1.mp3",
+    title: "This is a test",
+    artist: "Dave Schumaker",
+  },
+  {
+    url: "http://dave.ly/stuff/music/d2.mp3",
+    title: "Wiggity Whack!",
+    artist: "Dave Schumaker",
+  }    
 ];
