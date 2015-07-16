@@ -53,4 +53,24 @@ describe('PlayerView', function() {
     });
   });
 
+  /*
+  // Work in Progress: Writing some tests!
+
+  describe('Removing songs', function() {
+    it('removes a song when user clicks it in the queue', function() {
+      var firstSong = library.at(0)
+        , secondSong = library.at(1)
+        , thirdSong = library.at(2)
+        , songQueue = appView.model.get('songQueue');
+      // Set up a queue of three songs
+      songQueue.add(firstSong);
+      songQueue.add(secondSong);
+      songQueue.add(thirdSong);
+
+      expect(songQueue.length).to.equal(3);
+
+      $(appView.songQueueView.el).children().eq(1).click();
+    });
+  });
+  */
 });
