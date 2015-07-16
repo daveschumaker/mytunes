@@ -9,7 +9,10 @@ var SongQueue = Songs.extend({
     });
   },
   dequeue: function() {
-    return this.shift();
+    console.log('DQin!');
+    console.log(this);
+    this.shift();
+    console.log(this);
   },
   playFirst: function() {
     this.first().play();
