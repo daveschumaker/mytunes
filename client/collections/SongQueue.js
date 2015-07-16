@@ -7,12 +7,14 @@ var SongQueue = Songs.extend({
         this.playFirst();
       }
     });
+
+    this.on('ended', function() {
+      this.dequeue();
+      this.playFirst();
+    })
   },
   dequeue: function() {
-    console.log('DQin!');
-    console.log(this);
     this.shift();
-    console.log(this);
   },
   playFirst: function() {
     this.first().play();
